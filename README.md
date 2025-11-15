@@ -1,5 +1,3 @@
-# av.2Web — Mono-repositório para Mobile & Web
-
 Visão geral
 ----------
 av.2Web é um mono-repositório que contém dois projetos intimamente relacionados:
