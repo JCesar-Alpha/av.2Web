@@ -1,0 +1,153 @@
+/* Componente AlunoCard - Estilos personalizados */
+.aluno-card {
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.aluno-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #007bff;
+}
+
+.aluno-card__header {
+  border-bottom: 2px solid #f8f9fa;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.aluno-card__status-badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Componente Loading - Animações */
+.loading-spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-pulse {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Layout - Navegação */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
+/* Páginas - Estilos específicos */
+.page-header {
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.details-card {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.details-card__header {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  border-bottom: none;
+}
+
+/* Estados de erro e vazio */
+.error-state {
+  background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+  border-left: 4px solid #dc3545;
+}
+
+.empty-state {
+  background: linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%);
+  border-left: 4px solid #17a2b8;
+}
+
+.not-found-state {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+  border-left: 4px solid #ffc107;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .aluno-card {
+    margin-bottom: 1rem;
+  }
+  
+  .details-card .row > div {
+    margin-bottom: 1rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+}
+
+/* Utilitários visuais */
+.shadow-custom {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.gradient-primary {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+}
+
+.gradient-success {
+  background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+}
+
+/* Animações de transição */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Badges personalizadas */
+.badge-pill-custom {
+  border-radius: 50rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Cards de ação */
+.action-card {
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.action-card:active {
+  transform: scale(0.98);
+}
